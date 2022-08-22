@@ -1,0 +1,263 @@
+/*
+
+Dark Mode
+
+*/
+
+body {
+    background: #2a2a2a;
+    background-image: url(images/dark-mode.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#header_container {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.flex-container {
+    backdrop-filter: blur(2px);
+    padding-bottom: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li a {
+    min-width: 100px;
+    font-size: large;
+    line-height: 1.8;
+}
+
+li a, #link_button {
+    background-color: #0000004c;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#link_button {
+    font-family: inherit;
+    font-size: 1em;
+    border: none;
+    text-shadow: 2px 2px 2px #ef5fb8;
+    background-color: transparent;
+}
+
+#link_button:hover {
+    background-color: transparent;
+}
+
+li a:hover, #links:hover #link_button {
+    cursor: pointer;
+    color: #b5b5b5;
+    background-color: transparent;
+}
+
+li#links {
+    float: right;
+    width: 120px;
+}
+
+#link_menu {
+    display: none;
+    position: absolute;
+    min-width: 75px;
+}
+
+#link_menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-weight: 900;
+}
+
+#link_menu a:hover {
+    color: #c6bfbf;
+}
+
+#links:hover #link_menu {
+    display: block;
+}
+
+#header {
+    float: left;
+    width: auto;
+    margin: 25px 75px 0px 40px;
+    flex-grow: 8;
+
+    font-size: 48pt;
+    font-family: 'Dancing Script', cursive;
+    color: #e6e6e6;
+    text-shadow: 2px 3px 3px #ef5fb8;
+    letter-spacing: 3px;
+    transition: letter-spacing .5s ease;
+}
+
+#header:hover {
+    letter-spacing: 7px;
+}
+
+#mode_switch {
+    float: right;
+    color: white;
+    text-shadow: 2px 2px 3px #ef5fb8;
+}
+
+#mode_switch:hover {
+    cursor: pointer;
+    color: #a4a1a1;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #c6bfbf;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3d3c3c;
+}
+
+#main_container {
+    max-width: max-content;
+    margin: 100px;
+}
+
+#content_container {
+    clear: both;
+    float: left;
+    width: 550px;
+    max-width: max-content;
+    font-size: 24pt;
+    color: white;
+}
+
+#content_title {
+    background-color: #00000082;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48pt;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#prompt {
+    margin: 0px 25px 25px 25px;
+    backdrop-filter: blur(10px);
+    border: 5px double #777575a3;
+    padding: 25px;
+    text-align: center;
+    height: 222px;
+    overflow: auto;
+}
+
+#prompt::-webkit-scrollbar {
+    width: 0px;
+}
+
+#prompt::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#answer {
+    margin: 25px;
+    backdrop-filter: blur(10px);
+    border: 5px double #777575a3;
+    padding: 25px;
+    height: 415px;
+    overflow: auto;
+}
+
+#answer::-webkit-scrollbar {
+    width: 0px;
+}
+
+#answer::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#citation {
+    text-align: center;
+    font-size: 10pt;
+    margin: 25px;
+    backdrop-filter: blur(10px);
+    border: 5px double #777575a3;
+    padding: 25px;
+    height: 67px;
+    overflow: auto;
+}
+
+#citation::-webkit-scrollbar {
+    width: 0px;
+}
+
+#citation::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#images_container {
+    float: right;
+    margin-left: 190px;
+    width: 550px;
+    max-width: max-content;
+}
+
+#image_title {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48pt;
+    margin-bottom: 10px;
+    background-color: #00000082;
+    text-align: center;
+    margin-left: 0px;
+}
+
+#images {
+    border: 5px double #777575a3;
+    padding: 25px 25px 0px 25px;
+    backdrop-filter: blur(5px);
+    line-height: 100px;
+    height: 900px;
+    width: 500px;
+    overflow: auto;
+}
+
+#images::-webkit-scrollbar {
+    width: 0px;
+}
+
+#images::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.images {
+    max-width: 100%;
+    height: auto;
+    transition: transform .5s ease;
+    transition-delay: .2s;
+}
+
+.images:hover {
+    transform: scale(1.1); 
+}
+
+#footer {
+    clear: both;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lightMode.css">
+    <link rel="stylesheet" href="darkMode.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+    <script src="mode_switch_toggle.js"></script>
+    <title>JavaScript Debugging and the DOM</title>
+</head>
+<body>
+
+    <div class="flex-container" id="header_container">
+       <ul> 
+           <li style="float: left"><h2 id="header">Knowledge Check - Deziallia Morris</h2></li>
+           <li><h2 id="mode_switch" onclick="mode_switch_toggle()">Light Mode</h2></li>
+           <li id="links">
+            <button id="link_button"><h2>Links</h2></button>
+            <div id="link_menu">
+                <a href="convert_temps/index.html" target="_blank">Convert Temperatures</a>
+            </div> <!-- end of link menu-->
+            </li> 
+        </ul> <!-- end of list-->
+    </div> <!-- end of header_container-->
+
+    <div id="main_container">
+        <div id="content_container">
+            <div id="content_title"><label>Assignment</label></div>
+                <div id="prompt">
+                    Provide a written summary of debugging suggestions and tips using Chrome when working with JavaScript.<br>
+                    There should be a minimum of 200 words and details provided.
+                </div>
+                <div id="answer">
+                    <i>
+                        <p style="text-indent: 50px">
+                            Google's Chrome browser offers some great developer tools and I learned a lot from using them this chapter.
+                        </p>
+                        <p style="text-indent: 50px">
+                            The one thing that I've dreaded using as a developer (in training) myself is the breakpoint tool. 
+                            I didn't know how to use it at first and even though a tutorial was a click away, Chrome's developer tools was very user 
+                            friendly and I picked it up quickly. The tool features a "step through and over" technique to help step through 
+                            lines of code very easily and it even shows the input for a given variable or statement so you can see real-time / real-world 
+                            events happening as it goes.
+                        </p>
+                        <p style="text-indent: 50px">
+                            Another cool feature of Chrome's developer tools is the Sources page. The Sources page can show what files are being 
+                            used in the webpage and even the code that is a given file. This is helpful because when there is an error in the code, 
+                            a link through the error message can lead to the exact location of the error. This is more effective and efficient 
+                            than having to traverse through a program, especially if that program contains a large amount of code.</p>
+                        <p style="text-indent: 50px">
+                            Overall, I feel that Chrome's developer tools are a great asset in debugging and testing program.
+                        </p>
+                    </i>
+                </div>
+                <div id="citation">
+                    <br>
+                    <p>
+                    <i>
+                        Delamater, M. and Ruvalcaba, Z., n.d. Murach's JavaScript and jQuery. 3rd ed
+                    </i>
+                    </p>
+                </div>
+        </div> <!-- end of content_container-->
+        <div id="images_container">
+            <div id="image_title"><label>Images</label></div>
+            <div id="images">
+                <img class="images" src="images/screen1-ch5.png">
+                <img class="images" src="images/screen2-ch5.png">
+                <img class="images" src="images/screen3-ch5.png">
+
+                <img class="images" src="images/screen1-ch6.png">
+                <img class="images" src="images/screen2-ch6.png">
+                <img class="images" src="images/screen3-ch6.png">
+        </div> <!-- end of images_container-->
+        <div id="footer"></div>
+    </div> <!-- end of main_container-->
+</body>
+</html>
